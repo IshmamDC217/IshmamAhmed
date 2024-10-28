@@ -50,7 +50,7 @@ const Hero = () => {
                 background="transparent"
                 minSize={0.6}
                 maxSize={1.4}
-                particleDensity={100}
+                particleDensity={40}
                 className="w-full h-full"
                 particleColor="#FFFFFF"
               />
