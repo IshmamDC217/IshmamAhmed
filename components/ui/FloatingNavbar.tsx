@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { IoMenu } from "react-icons/io5";
 import { cn } from "@/lib/utils";
@@ -13,9 +13,25 @@ export const FloatingNav = ({
   }[];
 }) => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <nav className="fixed w-full z-20 top-0 start-0">
+    <nav className={cn("fixed w-full z-[9999] top-0 start-0 transition-all duration-300", { "bg-white/30 backdrop-blur-md": scrolled })}>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         {/* Logo and title */}
         <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -30,7 +46,7 @@ export const FloatingNav = ({
           <Link href="https://github.com" target="_blank">
             <button
               type="button"
-              className="text-white bg-[#192dac] focus:outline-none font-medium rounded-2xl text-sm px-4 py-3 text-center border"
+              className="text-white bg-blue-900 focus:outline-none font-medium rounded-2xl text-sm px-4 py-3 text-center border"
             >
               Github
             </button>
@@ -44,24 +60,24 @@ export const FloatingNav = ({
             aria-expanded={menuOpen}
           >
             <span className="sr-only">Open main menu</span>
-            <IoMenu className="w-5 h-5" />
+            <IoMenu className="w-36 h-36 rounded-md" />
           </button>
         </div>
 
         {/* Links for desktop */}
         <div
           className={cn(
-            "items-center pr-10 justify-between hidden w-full md:flex md:w-auto md:order-1",
+            "items-center justify-center w-full md:flex md:w-auto md:order-1",
             { hidden: !menuOpen } // Only show on mobile when toggled
           )}
           id="navbar-sticky"
         >
-          <ul className="flex flex-col p-2 mt-4 font-medium border border-gray-500 rounded-lg bg-gray-50 md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-[#434343dd]">
+          <ul className="flex flex-col w-full p-2 mt-4 font-medium border border-gray-500 rounded-lg bg-slate-900 md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-slate-900 md:justify-center">
             {navItems.map((navItem, idx) => (
-              <li key={idx}>
+              <li key={idx} className="w-full">
                 <Link
                   href={navItem.link}
-                  className="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-[#192dac] md:hover:text-white md:text-white dark:hover:bg-[#192dac]"
+                  className="block py-2 px-3 text-left rounded hover:bg-gray-100 md:hover:bg-[#192dac] md:hover:text-white md:text-white dark:hover:bg-blue-900"
                 >
                   {navItem.name}
                 </Link>
