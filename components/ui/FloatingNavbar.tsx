@@ -31,7 +31,7 @@ export const FloatingNav = ({
   }, []);
 
   return (
-    <nav className={cn("fixed w-full z-[9999] top-0 start-0 transition-all duration-300", { "bg-gray-700/30 backdrop-blur-md": scrolled })}>
+    <nav className={cn("fixed w-full z-[9999] top-0 start-0 transition-all duration-300", { "bg-gray-600/30 backdrop-blur-md": scrolled })}>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         {/* Logo and title */}
         <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -67,7 +67,7 @@ export const FloatingNav = ({
         {/* Links for desktop */}
         <div
           className={cn(
-            "items-center justify-center border border-gray-500 rounded-lg w-full md:flex md:w-auto md:order-1",
+            "items-center justify-center border rounded-lg w-full md:flex md:w-auto md:order-1",
             { hidden: !menuOpen } // Only show on mobile when toggled
           )}
           id="navbar-sticky"
