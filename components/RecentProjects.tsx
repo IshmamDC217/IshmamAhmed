@@ -22,11 +22,11 @@ const RecentProjects = () => {
               title={item.title}
               href={item.link}
             >
-              <div className="relative flex items-center justify-center w-full overflow-hidden h-[12vh] mb-10">
+              <div className="relative flex items-center justify-center w-full overflow-hidden h-[20vh] mb-10">
                 <img
                   src={item.img}
                   alt="cover"
-                  className="z-10 absolute bottom-0"
+                  className="z-10 absolute bottom-0 object-cover w-full h-full"
                 />
               </div>
 
