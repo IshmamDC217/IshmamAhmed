@@ -1,1 +1,1 @@
-Draft for my new portfolio
+My new portfolio, I plan on using my old site for something else
