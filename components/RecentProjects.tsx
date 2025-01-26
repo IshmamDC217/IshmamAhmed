@@ -18,48 +18,50 @@ const RecentProjects = () => {
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center w-full"
             key={item.id}
           >
-            <PinContainer
-              title={item.title}
-              href={item.link}
-            >
-              <div className="relative flex items-center justify-center w-full overflow-hidden h-[20vh] mb-10">
-                <img
-                  src={item.img}
-                  alt="cover"
-                  className="z-10 absolute bottom-0 object-cover w-full h-full"
-                />
-              </div>
-
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
-                {item.title}
-              </h1>
-
-              <p className="lg:text-xl lg:font-normal font-light text-sm" style={{ color: "#BEC1DD", margin: "1vh 0" }}>
-                {item.des}
-              </p>
-
-              <div className="flex items-center justify-between mt-7 mb-3 px-5">
-                <div className="flex items-center">
-                  {item.iconLists.map((icon, index) => (
-                    <div
-                      key={index}
-                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
-                      style={{
-                        transform: `translateX(-${5 * index + 2}px)`,
-                      }}
-                    >
-                      <img src={icon} alt="icon5" className="p-2" />
-                    </div>
-                  ))}
+            <a href={item.link} target="_blank" rel="noopener noreferrer">
+              <PinContainer
+                title={item.title}
+                href={item.link}
+              >
+                <div className="relative flex items-center justify-center w-full overflow-hidden h-[20vh] mb-10">
+                  <img
+                    src={item.img}
+                    alt="cover"
+                    className="z-10 absolute bottom-0 object-cover w-full h-full"
+                  />
                 </div>
 
-                <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Visit Site
-                  </p>
+                <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+                  {item.title}
+                </h1>
+
+                <p className="lg:text-xl lg:font-normal font-light text-sm" style={{ color: "#BEC1DD", margin: "1vh 0" }}>
+                  {item.des}
+                </p>
+
+                <div className="flex items-center justify-between mt-7 mb-3 px-5">
+                  <div className="flex items-center">
+                    {item.iconLists.map((icon, index) => (
+                      <div
+                        key={index}
+                        className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                        style={{
+                          transform: `translateX(-${5 * index + 2}px)`,
+                        }}
+                      >
+                        <img src={icon} alt="icon5" className="p-2" />
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="flex justify-center items-center">
+                    <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                      Visit Site
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </PinContainer>
+              </PinContainer>
+            </a>
           </div>
         ))}
       </div>
