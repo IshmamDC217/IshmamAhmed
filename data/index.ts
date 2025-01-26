@@ -71,7 +71,7 @@ export const projects = [
     des: "A group expense tracker using Convex, React, and TypeScript for flexible expense splitting, budget management, and personal finance tracking.",
     img: "/pocketowl.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/convex.png", "/scn.png"],
-    link: "/ui.earth.com",
+    link: "https://pocketowl.netlify.app/login",
   },
   {
     id: 2,
@@ -79,7 +79,7 @@ export const projects = [
     des: "A car-buying assistant built with Angular, AWS, and TypeScript, providing personalized car recommendations based on user preferences.",
     img: "/bcfy.png",
     iconLists: ["/re.svg", "/aws.png", "/tail.svg", "/ts.svg", "/csharp.png"],
-    link: "/ui.yoom.com",
+    link: "http://bcfy-frontend.s3-website.eu-west-2.amazonaws.com/",
   },
   {
     id: 3,
@@ -87,7 +87,7 @@ export const projects = [
     des: "A video game-inspired website for Metora Cliffs, a prog metal band, featuring dynamic animations using Next.js, Tailwind CSS, and Framer Motion.",
     img: "/metoraweb.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/next.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    link: "https://metoracliffs.netlify.app/",
   },
   {
     id: 4,
@@ -95,7 +95,7 @@ export const projects = [
     des: "An end-to-end encrypted chat platform built with React and GraphQL, integrating blockchain for key storage to enhance security.",
     img: "/crypticchat.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    link: "https://www.youtube.com/watch?v=rbp7qWCPctk",
   },
 ];
 
@@ -163,14 +163,14 @@ export const workExperience = [
   {
     id: 1,
     title: "Software Engineer",
-    desc: "Resolved complex full-stack issues and enhanced HLR Lookup products using TypeScript, React.js, Node.js, and PHP. Integrated Redis to boost performance and scalability across applications and developed reusable, modular UI/UX components for client and admin pages.",
+    desc: "Worked on full-stack tasks on a day-to-day basis, creating multiple internal tools and systems for G Telecoms. Also developed personal projects independently and collaboratively with peers.",
     className: "md:col-span-2",
     thumbnail: "/exp1.gif",
   },
   {
     id: 2,
     title: "Mobile Developer",
-    desc: "Designed and built mobile applications for iOS and Android, focusing on responsive layouts, intuitive navigation, and optimized performance.",
+    desc: "Designed and built mobile applications with a focus on responsive layouts, intuitive navigation, and optimized performance. Developed user-friendly interfaces and ensured seamless user experiences.",
     className: "md:col-span-2",
     thumbnail: "/exp2.gif",
   },
