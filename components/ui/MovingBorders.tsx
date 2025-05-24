@@ -17,6 +17,7 @@ export function Button({
   containerClassName,
   borderClassName,
   duration,
+  glowColor = "#CBACF9",
   className,
   ...otherProps
 }: {
@@ -47,10 +48,10 @@ export function Button({
       >
         <MovingBorder duration={duration} rx="30%" ry="30%">
           <div
-            className={cn(
-              "h-20 w-20 opacity-[0.8] bg-[radial-gradient(#CBACF9_40%,transparent_60%)]",
-              borderClassName
-            )}
+            className={cn("h-20 w-20 opacity-[0.8]", borderClassName)}
+            style={{
+              background: `radial-gradient(${glowColor} 40%, transparent 60%)`,
+            }}
           />
         </MovingBorder>
       </div>
