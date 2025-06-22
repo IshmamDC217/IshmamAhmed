@@ -10,8 +10,8 @@ const BlogPage = () => {
     const [sortOrder, setSortOrder] = useState<"newest" | "oldest">("newest");
 
     const sortedBlogs = [...blogs].sort((a, b) => {
-        const dateA = new Date(a.date);
-        const dateB = new Date(b.date);
+        const dateA = new Date(a.date || "");
+        const dateB = new Date(b.date || "");
         return sortOrder === "newest"
             ? dateB.getTime() - dateA.getTime()
             : dateA.getTime() - dateB.getTime();
@@ -69,37 +69,33 @@ const BlogPage = () => {
                             className="relative group"
                         >
                             {/* Dot */}
-                            <div className="absolute -left-[9px] top-3 w-3 h-3 bg-white rounded-full shadow-md group-hover:scale-125 transition-transform" />
+                            <div className="absolute -left-[30px] top-3 w-3 h-3 bg-white rounded-full shadow-md group-hover:scale-125 transition-transform" />
 
                             <div className="block group">
-                                {/* Cover Image */}
-                                <div className="overflow-hidden rounded-xl mb-4">
-                                    <img
-                                        src={blog.image}
-                                        alt={blog.title}
-                                        className="w-full h-auto rounded-xl group-hover:scale-[1.02] transition-transform duration-300"
-                                    />
-                                </div>
-
                                 {/* Title */}
                                 <h2 className="text-2xl font-semibold text-white mb-1">
                                     {blog.title}
                                 </h2>
 
-                                {/* Date with Location Icon */}
-                                <div className="text-white/50 text-sm flex items-center gap-2 mb-3">
-                                    <FaMapMarkerAlt className="text-white/40" />
-                                    {blog.date}
+                                {/* Date and Location */}
+                                <div className="text-white/50 text-sm flex items-center flex-wrap gap-4 mb-3">
+                                    <span>{blog.date}</span>
+                                    {blog.location && (
+                                        <span className="flex items-center gap-1">
+                                            <FaMapMarkerAlt className="text-red-500" />
+                                            {blog.location}
+                                        </span>
+                                    )}
                                 </div>
 
-                                {/* Paragraphs */}
+                                {/* Content Paragraphs */}
                                 <div className="text-white/70 text-sm leading-relaxed space-y-3 mb-6">
                                     {blog.content.map((paragraph, i) => (
                                         <p key={i}>{paragraph}</p>
                                     ))}
                                 </div>
 
-                                {/* Uniform Image Grid - 5:4 Balanced Layout */}
+                                {/* Images */}
                                 {blog.images && blog.images.length > 0 && (
                                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-4">
                                         {blog.images.map((src, i) => (

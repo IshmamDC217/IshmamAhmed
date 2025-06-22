@@ -42,7 +42,7 @@ export const FloatingNav = ({
 
         {/* Buttons and menu toggle */}
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <Link href="https://github.com/IshmamDC217" target="_blank">
+          <Link href="/blog" target="_blank">
             <button
               type="button"
               className="text-white bg-blue-900 focus:outline-none font-medium rounded-2xl text-sm px-4 py-3 text-center border"
