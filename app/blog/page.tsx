@@ -65,7 +65,11 @@ const BlogPage = () => {
                             initial={{ opacity: 0, x: 40 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true, amount: 0.4 }}
-                            transition={{ delay: idx * 0.1, duration: 0.6 }}
+                            transition={{
+                                delay: idx * 0.1,
+                                duration: 0.9,
+                                ease: "easeOut",
+                            }}
                             className="relative group"
                         >
                             {/* Dot */}
