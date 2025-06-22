@@ -28,7 +28,7 @@ export const blogs = [
         id: "jan-world-tour",
         title: "Three Countries, One Soul: Turkey, Bangladesh, Indonesia",
         author: "Ishmam Ahmed",
-        date: "2025-12-02",
+        date: "2025-01-22",
         location: "Bali, Indonesia",
         image: "/blog/jantrip-cover.png",
         comments: 8,
