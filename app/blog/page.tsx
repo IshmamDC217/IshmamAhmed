@@ -36,8 +36,7 @@ const BlogPage = () => {
                     transition={{ delay: 0.3 }}
                     className="text-white/70 text-center max-w-2xl mx-auto mb-10"
                 >
-                    A space where I chronicle my journey through software engineering and music —
-                    capturing projects, ideas, and experiments along the way.
+                    A space where I document my path through code, music, and travel — sharing the experiences, lessons, and highlights along the way.
                 </motion.p>
 
                 {/* Filter */}
