@@ -92,12 +92,12 @@ export const blogs = [
             "/june6.jpeg",
         ],
         content: [
-            "For our 3.5 year anniversary, my partner surprised me with tickets to see Andy McKee live — and we actually got to meet him. It was surreal meeting one of my childhood heroes, the guy who singlehandedly inspired me to pick up fingerstyle guitar.",
-            "June’s been a big one. Musically, Metora Cliffs is flying! We re-released *Mind Over Matter* and people are really vibing with it. Plus, we started using in-ear monitors (IEMs) and honestly… game-changer.",
-            "On the personal front, my partner and I are finally moving out of our tiny flat. We found a lovely two-bed house with a garden, a proper kitchen, and even parking — grown-up stuff.",
-            "She’s just landed a new job as a tester, and I got a raise too. Feels like we’re finally stepping into the next chapter.",
-            "The best bit? We’re turning the second room into a music studio. Guitars on the wall, interface on the desk, endless cups of tea. Feels like we’re building the life we’ve always wanted.",
-            "Software by day, music by night. That’s the dream — and now we’re living a little piece of it.",
+            // "June’s been a big one. For our 3.5 year anniversary, my girlfriend surprised me with tickets to see Andy McKee live — and we actually got to meet him. It was surreal meeting one of my childhood heroes, the guy who singlehandedly inspired me to pick up fingerstyle guitar.",
+            "Musically, Metora Cliffs is flying! We re-released *Mind Over Matter* and people are really vibing with it. Plus, we started using in-ear monitors (IEMs) and honestly… game-changer.",
+            // "On the personal front, my partner and I are finally moving out of our tiny flat. We found a lovely two-bed house with a garden, a proper kitchen, and even parking — grown-up stuff.",
+            // "She’s just landed a new job as a tester, and I got a raise too. Feels like we’re finally stepping into the next chapter.",
+            // "The best bit? We’re turning the second room into a music studio. Guitars on the wall, interface on the desk, endless cups of tea. Feels like we’re building the life we’ve always wanted.",
+            // "Software by day, music by night. That’s the dream — and now we’re living a little piece of it.",
         ],
     },
 ];
