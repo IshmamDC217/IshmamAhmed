@@ -38,15 +38,6 @@ const BlogPostPage = () => {
                     </span>
                 </div>
 
-                {/* Cover Image */}
-                <Image
-                    src={blog.image}
-                    alt={blog.title}
-                    width={800}
-                    height={400}
-                    className="w-full h-auto rounded-xl mb-10"
-                />
-
                 {/* Article Content */}
                 <div className="space-y-6 text-white/90 text-base leading-relaxed mb-12">
                     {blog.content.map((paragraph, idx) => (
