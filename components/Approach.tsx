@@ -7,7 +7,7 @@ const Approach = () => {
   return (
     <section className="w-full py-20">
       <h1 className="heading">
-        My <span className="text-blue-300">Strategy</span>
+        My <span className="gradient-text-accent">Strategy</span>
       </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
         <Card
@@ -75,19 +75,17 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border border-black/[0.2] group/canvas-card flex items-center justify-center
-       dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative lg:h-[35rem] rounded-3xl "
+      className="border border-white/10 bg-white/5 backdrop-blur-2xl group/canvas-card flex items-center justify-center
+       max-w-sm w-full mx-auto p-4 relative lg:h-[35rem] rounded-3xl hover:border-blue-400/40 hover:shadow-[0_0_35px_-8px_rgba(59,130,246,0.4)] transition-all duration-300"
       style={{
-        background: "rgb(4,7,29)",
-        backgroundColor:
-          "",
+        background: "rgba(4,7,29,0.7)",
         borderRadius: `calc(1.75rem* 0.96)`,
       }}
     >
-      <Icon className="absolute h-10 w-10 -top-3 -left-3 dark:text-white text-black opacity-30" />
-      <Icon className="absolute h-10 w-10 -bottom-3 -left-3 dark:text-white text-black opacity-30" />
-      <Icon className="absolute h-10 w-10 -top-3 -right-3 dark:text-white text-black opacity-30" />
-      <Icon className="absolute h-10 w-10 -bottom-3 -right-3 dark:text-white text-black opacity-30" />
+      <Icon className="absolute h-10 w-10 -top-3 -left-3 text-white opacity-30" />
+      <Icon className="absolute h-10 w-10 -bottom-3 -left-3 text-white opacity-30" />
+      <Icon className="absolute h-10 w-10 -top-3 -right-3 text-white opacity-30" />
+      <Icon className="absolute h-10 w-10 -bottom-3 -right-3 text-white opacity-30" />
 
       <AnimatePresence>
         {hovered && (
@@ -109,9 +107,9 @@ const Card = ({
           {icon}
         </div>
         <h2
-          className="dark:text-white text-center text-3xl opacity-0 group-hover/canvas-card:opacity-100
-         relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white 
-         group-hover/canvas-card:-translate-y-2 transition duration-200"
+          className="text-white text-center text-3xl opacity-0 group-hover/canvas-card:opacity-100
+         relative z-10 mt-4 font-bold group-hover/canvas-card:text-white
+         group-hover/canvas-card:-translate-y-2 transition duration-200 drop-shadow-[0_0_10px_rgba(255,255,255,0.1)]"
         >
           {title}
         </h2>
@@ -131,14 +129,18 @@ const Card = ({
 const AceternityIcon = ({ step }: { step: string }) => {
   return (
     <div>
-      <button className="relative inline-flex overflow-hidden rounded-full p-[1px] ">
+      <button className="relative inline-flex overflow-hidden rounded-full p-[2px] ">
         <span
-          className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite]
-         bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"
+          className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite]
+         bg-[conic-gradient(from_90deg_at_50%_50%,#ffffff_0%,#3b82f6_20%,#06b6d4_40%,#3b82f6_60%,#ffffff_80%,#3b82f6_100%)]"
         />
         <span
-          className="inline-flex h-full w-full cursor-pointer items-center 
-        justify-center rounded-full bg-slate-950 px-5 py-2 text-purple backdrop-blur-3xl font-bold text-2xl"
+          className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite_reverse]
+         bg-[conic-gradient(from_90deg_at_50%_50%,#ffffff_0%,#06b6d4_25%,#3b82f6_50%,#06b6d4_75%,#ffffff_100%)] opacity-60"
+        />
+        <span
+          className="relative inline-flex h-full w-full cursor-pointer items-center
+        justify-center rounded-full bg-gradient-to-br from-[#0a0a0f] via-[#0f0f1a] to-[#0a0a0f] px-5 py-2 text-blue-300 backdrop-blur-3xl font-bold text-2xl border border-white/20"
         >
           {step}
         </span>

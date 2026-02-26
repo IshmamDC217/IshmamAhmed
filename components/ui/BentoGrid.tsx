@@ -73,13 +73,13 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 border border-gray-400",
+        "row-span-1 relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-2xl group/bento hover:border-blue-400/40 hover:shadow-[0_0_35px_-8px_rgba(59,130,246,0.4)] hover:scale-[1.01] transition-all duration-300 justify-between flex flex-col space-y-4",
         className
       )}
       style={{
-        background: "rgb(4,7,29)",
-        backgroundColor:
-          "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+        background: "rgba(4,7,29,0.7)",
+        backgroundImage:
+          "linear-gradient(135deg, rgba(4,7,29,0.8) 0%, rgba(12,14,35,0.6) 100%)",
       }}
     >
       {/* add img divs */}
@@ -123,7 +123,7 @@ export const BentoGridItem = ({
             {description}
           </div>
           <div
-            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
+            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.1)]`}
           >
             {title}
           </div>

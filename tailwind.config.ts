@@ -56,6 +56,11 @@ const config: Config = {
         gradientBlue: {
           DEFAULT: "linear-gradient(90deg, #0A2A5E 0%, #376BBF 100%)", // Darker gradient for a bold look
         },
+        glow: {
+          blue: "rgba(59,130,246,0.4)",
+          cyan: "rgba(6,182,212,0.3)",
+          indigo: "rgba(99,102,241,0.3)",
+        },
         background: "#050711", // Very dark navy-black background
         foreground: "#E3E7EE", // Softer light gray for readability
         primary: {
@@ -157,6 +162,14 @@ const config: Config = {
             transform: "translate(calc(-50% - 0.5rem))",
           },
         },
+        "orb-float": {
+          "0%, 100%": { transform: "translateY(0px) scale(1)" },
+          "50%": { transform: "translateY(-20px) scale(1.05)" },
+        },
+        "spin-slow": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -170,6 +183,9 @@ const config: Config = {
         fifth: "moveInCircle 20s ease infinite",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        "orb-float": "orb-float 8s ease-in-out infinite",
+        "spin-slow": "spin-slow 3s linear infinite",
+        "spin-slow-reverse": "spin-slow 3s linear infinite reverse",
       },
     },
   },

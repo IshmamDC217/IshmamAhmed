@@ -1,11 +1,11 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { IoMenu } from "react-icons/io5";
+import { IoMenu, IoClose } from "react-icons/io5";
 import { cn } from "@/lib/utils";
 
 export const FloatingNav = ({
-  navItems = [], // ✅ Default to empty array
+  navItems = [],
 }: {
   navItems?: {
     name: string;
@@ -25,73 +25,81 @@ export const FloatingNav = ({
   }, []);
 
   return (
-    <nav
-      className={cn(
-        "fixed w-full z-[9999] top-0 start-0 transition-all duration-300",
-        { "bg-gray-600/30 backdrop-blur-md": scrolled }
-      )}
-    >
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        {/* Logo and title */}
-        <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <div className="logo-bg"></div>
-          <span className="self-center text-2xl font-bold whitespace-nowrap text-white">
-            Ishmam
-          </span>
-        </Link>
-
-        {/* Buttons and menu toggle */}
-        <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <Link href="/blog" target="_blank">
-            <button
-              type="button"
-              className="text-white bg-blue-900 focus:outline-none font-medium rounded-2xl text-sm px-4 py-3 text-center border"
-            >
-              Blog
-            </button>
-          </Link>
-
-          <button
-            type="button"
-            className="menu-toggle inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-expanded={menuOpen}
-          >
-            <span className="sr-only">Open main menu</span>
-            <IoMenu className="w-36 h-36 rounded-md" />
-          </button>
-        </div>
-
-        {/* Navigation links */}
+    <nav className="fixed w-full z-[9999] top-0 start-0 transition-all duration-500">
+      <div className="max-w-screen-xl mx-auto px-4 py-4">
         <div
           className={cn(
-            "items-center justify-center border rounded-lg w-full md:flex md:w-auto md:order-1",
-            { hidden: !menuOpen }
+            "flex flex-wrap items-center justify-between rounded-full border px-5 py-2 backdrop-blur-xl shadow-lg transition-all duration-500",
+            scrolled
+              ? "border-white/20 bg-gradient-to-r from-blue-500/90 via-blue-600/90 to-indigo-600/90 shadow-[0_8px_32px_rgba(59,130,246,0.3)]"
+              : "border-white/10 bg-white/5"
           )}
-          id="navbar-sticky"
         >
-          <ul className="flex flex-col w-full p-2 mt-4 font-medium border border-gray-500 rounded-lg bg-slate-900 md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-slate-900 md:justify-center">
-            {navItems
-              .filter(item => item.name !== "Music")
-              .map((navItem, idx) => (
-                <li key={idx} className="w-full">
-                  <Link
-                    href={navItem.link}
-                    target={
-                      navItem.link.startsWith("http") ? "_blank" : undefined
-                    }
-                    rel={
-                      navItem.link.startsWith("http")
-                        ? "noopener noreferrer"
-                        : undefined
-                    }
-                    className="block py-2 px-3 text-left rounded hover:bg-gray-100 md:hover:bg-[#192dac] md:hover:text-white md:text-white dark:hover:bg-blue-900"
-                  >
-                    {navItem.name}
-                  </Link>
-                </li>
-              ))}
-          </ul>
+          {/* Logo and title */}
+          <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+            <div className="logo-bg"></div>
+            <span className="self-center text-2xl font-bold whitespace-nowrap text-white tracking-[0.1em]">
+              Ishmam
+            </span>
+          </Link>
+
+          {/* Buttons and menu toggle */}
+          <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+            <Link href="/blog" target="_blank">
+              <button
+                type="button"
+                className="text-white bg-gradient-to-r from-blue-500 to-indigo-600 font-bold rounded-full text-sm px-5 py-2.5 text-center uppercase tracking-wide hover:shadow-[0_0_20px_rgba(96,165,250,0.7)] hover:scale-105 transition-all duration-300"
+              >
+                Blog
+              </button>
+            </Link>
+
+            <button
+              type="button"
+              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-full md:hidden text-white hover:bg-white/10 focus:outline-none transition-all"
+              onClick={() => setMenuOpen(!menuOpen)}
+              aria-expanded={menuOpen}
+            >
+              <span className="sr-only">Open main menu</span>
+              {menuOpen ? (
+                <IoClose className="w-6 h-6" />
+              ) : (
+                <IoMenu className="w-6 h-6" />
+              )}
+            </button>
+          </div>
+
+          {/* Navigation links */}
+          <div
+            className={cn(
+              "items-center justify-center w-full md:flex md:w-auto md:order-1",
+              { hidden: !menuOpen }
+            )}
+            id="navbar-sticky"
+          >
+            <ul className="flex flex-col w-full p-2 mt-4 font-medium rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-transparent md:justify-center">
+              {navItems
+                .filter(item => item.name !== "Music")
+                .map((navItem, idx) => (
+                  <li key={idx} className="w-full">
+                    <Link
+                      href={navItem.link}
+                      target={
+                        navItem.link.startsWith("http") ? "_blank" : undefined
+                      }
+                      rel={
+                        navItem.link.startsWith("http")
+                          ? "noopener noreferrer"
+                          : undefined
+                      }
+                      className="block py-2 px-3 text-left rounded-full text-white/80 hover:text-white hover:bg-white/10 hover:shadow-[0_0_15px_rgba(59,130,246,0.3)] transition-all duration-300 text-sm uppercase tracking-wide font-semibold"
+                    >
+                      {navItem.name}
+                    </Link>
+                  </li>
+                ))}
+            </ul>
+          </div>
         </div>
       </div>
     </nav>

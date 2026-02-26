@@ -4,38 +4,6 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
-
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
-
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 240 10% 3.9%;
-
-    --radius: 0.5rem;
-  }
-
-  .dark {
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
 
@@ -63,6 +31,8 @@
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
+
+    --radius: 0.5rem;
   }
 }
 
@@ -71,10 +41,6 @@
     @apply border-transparent !scroll-smooth;
   }
 
-  /* body {
-    @apply bg-background text-foreground;
-  } */
-
   button {
     @apply active:outline-none;
   }
@@ -82,15 +48,42 @@
 
 @layer utilities {
   .heading {
-    @apply font-bold text-4xl md:text-5xl text-center;
+    @apply font-bold text-4xl md:text-5xl text-center bg-clip-text text-transparent bg-gradient-to-r from-white via-blue-100 to-cyan-200;
+    filter: drop-shadow(0 0 30px rgba(59, 130, 246, 0.4));
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-blue-100 to-cyan-200;
+    filter: drop-shadow(0 0 30px rgba(59, 130, 246, 0.4));
+  }
+
+  .gradient-text-accent {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-500;
+    filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.6));
+  }
+
+  .glass-card {
+    @apply border border-white/10 bg-white/5 backdrop-blur-2xl rounded-2xl;
+    @apply hover:border-blue-400/40 hover:shadow-[0_0_35px_-8px_rgba(59,130,246,0.4)];
+    @apply transition-all duration-300;
+  }
+
+  .glass-card-strong {
+    @apply border border-white/10 bg-white/5 backdrop-blur-2xl rounded-3xl;
+    @apply hover:border-blue-400/70 hover:shadow-[0_0_35px_-8px_rgba(59,130,246,0.4)] hover:shadow-lg;
+    @apply transition-all duration-300 hover:scale-[1.02];
+  }
+
+  .section-divider {
+    @apply border-t border-white/10;
   }
 }
 
 section {
-  /* display: grid; */
   place-items: center;
   align-content: center;
   min-height: 100vh;
+  position: relative;
 }
 
 @media (min-width: 768px) {

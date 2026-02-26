@@ -8,11 +8,11 @@ const RecentProjects = () => {
   return (
     <div className="my-36 lg:my-0">
       <h1 className="heading py-24">
-        Recent <span className="text-blue-300">Tech Projects</span>
+        Recent <span className="gradient-text-accent">Tech Projects</span>
       </h1>
 
       {/* Adjust grid for responsive layout */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-28 lg:gap-40 max-w-7xl mx-auto pb-32 border-slate-600 border-b-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-28 lg:gap-40 max-w-7xl mx-auto pb-32 border-b border-white/10">
         {projects.map((item) => (
           <div
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center w-full"
@@ -44,7 +44,7 @@ const RecentProjects = () => {
                     {item.iconLists.map((icon, index) => (
                       <div
                         key={index}
-                        className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                        className="border border-white/10 rounded-full bg-white/5 backdrop-blur-xl lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
                         style={{
                           transform: `translateX(-${5 * index + 2}px)`,
                         }}
@@ -55,7 +55,7 @@ const RecentProjects = () => {
                   </div>
 
                   <div className="flex justify-center items-center">
-                    <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                    <p className="flex lg:text-xl md:text-xs text-sm text-blue-300 group-hover:text-cyan-300 transition-colors">
                       Visit Site
                     </p>
                   </div>

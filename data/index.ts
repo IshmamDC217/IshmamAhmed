@@ -1,5 +1,3 @@
-import { link } from "fs";
-
 export const navItems = [
   { name: "About", link: "/about" },
   { name: "Projects", link: "https://github.com/IshmamDC217" },
@@ -193,13 +191,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/IshmamDC217",
   },
   {
     id: 2,
     img: "/instagram.png",
+    link: "https://www.instagram.com/ishmam.ahmed",
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/ishmam-ahmed",
   },
 ];

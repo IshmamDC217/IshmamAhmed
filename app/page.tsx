@@ -12,7 +12,41 @@ import { FloatingNav } from "@/components/ui/FloatingNavbar";
 
 const Home = () => {
   return (
-    <main className="relative bg-black flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+    <main className="relative bg-[#050711] flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+      {/* Global ambient background */}
+      <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_12%,rgba(10,18,34,0.9),transparent_60%),radial-gradient(circle_at_78%_18%,rgba(30,58,138,0.22),transparent_50%),radial-gradient(circle_at_55%_80%,rgba(8,47,73,0.28),transparent_60%)]" />
+        <div className="hidden lg:block">
+          <div className="absolute top-1/3 left-[10%] h-80 w-80 bg-gradient-to-r from-blue-500/30 to-cyan-400/20 rounded-full blur-[140px] animate-pulse" />
+          <div className="absolute bottom-1/4 right-[10%] h-96 w-96 bg-gradient-to-r from-indigo-400/25 to-purple-500/20 rounded-full blur-[160px] animate-pulse" style={{ animationDelay: '1s' }} />
+          <div className="absolute top-0 left-1/2 h-64 w-64 bg-gradient-to-r from-fuchsia-500/15 to-pink-400/10 rounded-full blur-[120px] animate-pulse" style={{ animationDelay: '2s' }} />
+          <div className="absolute top-2/3 right-1/4 h-48 w-48 bg-gradient-to-r from-emerald-500/20 to-teal-400/15 rounded-full blur-[100px] animate-pulse" style={{ animationDelay: '0.5s' }} />
+        </div>
+        <div className="lg:hidden">
+          <div className="absolute top-1/4 left-[5%] h-64 w-64 bg-gradient-to-r from-blue-500/40 to-cyan-400/30 rounded-full blur-[120px] animate-pulse" />
+          <div className="absolute bottom-1/3 right-[5%] h-72 w-72 bg-gradient-to-r from-indigo-400/35 to-purple-500/25 rounded-full blur-[140px] animate-pulse" style={{ animationDelay: '1.5s' }} />
+        </div>
+        <div className="absolute inset-0">
+          {[
+            { left: "6%", top: "12%" }, { left: "18%", top: "28%" },
+            { left: "32%", top: "18%" }, { left: "44%", top: "36%" },
+            { left: "58%", top: "22%" }, { left: "72%", top: "30%" },
+            { left: "84%", top: "16%" }, { left: "12%", top: "58%" },
+            { left: "26%", top: "72%" }, { left: "40%", top: "62%" },
+            { left: "54%", top: "70%" }, { left: "68%", top: "58%" },
+            { left: "82%", top: "74%" }, { left: "8%", top: "88%" },
+            { left: "36%", top: "90%" }, { left: "64%", top: "88%" },
+            { left: "92%", top: "56%" }, { left: "78%", top: "44%" },
+          ].map((spot, i) => (
+            <div
+              key={i}
+              className="absolute w-1 h-1 bg-blue-400/50 rounded-full"
+              style={{ left: spot.left, top: spot.top }}
+            />
+          ))}
+        </div>
+      </div>
+
       <div className="max-w-7xl w-full">
         <FloatingNav navItems={navItems} />
         <Hero />

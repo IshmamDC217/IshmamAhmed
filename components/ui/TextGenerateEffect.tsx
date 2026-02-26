@@ -33,7 +33,7 @@ export const TextGenerateEffect = ({
             <motion.span
               key={word + idx}
               // Applying the theme: if index is greater than 3, color will be purple (#CBACF9)
-              className={` ${idx > 3 ? "text-[#1a30af]" : "text-blue-500 dark:text-blue-300"
+              className={` ${idx > 3 ? "text-cyan-300" : "text-white"
                 } opacity-0`}
             >
               {word}{" "}
@@ -47,7 +47,7 @@ export const TextGenerateEffect = ({
   return (
     <div className={cn("font-bold", className)}>
       <div className="my-4">
-        <div className="dark:text-blue-300 text-blue-500 leading-snug tracking-wide">
+        <div className="text-white leading-snug tracking-wide">
           {renderWords()}
         </div>
       </div>
