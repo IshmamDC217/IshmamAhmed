@@ -7,9 +7,10 @@ import { PinContainer } from "./ui/Pin";
 const RecentProjects = () => {
   return (
     <div className="my-36 lg:my-0">
-      <h1 className="heading py-24">
-        Recent <span className="gradient-text-accent">Tech Projects</span>
-      </h1>
+      <div className="py-24 text-center">
+        <span className="gradient-text-accent">Projects</span>
+        <h1 className="heading">Recent Work</h1>
+      </div>
 
       {/* Adjust grid for responsive layout */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-28 lg:gap-40 max-w-7xl mx-auto pb-32 border-b border-white/10">

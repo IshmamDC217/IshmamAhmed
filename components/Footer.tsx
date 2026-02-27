@@ -22,9 +22,10 @@ const Footer = () => {
       </div>
 
       <div className="relative flex flex-col items-center">
-        <h1 className="heading lg:max-w-[45vw]">
-          Elevate <span className="gradient-text-accent">your</span> online presence.
-        </h1>
+        <div className="text-center lg:max-w-[45vw]">
+          <span className="gradient-text-accent">Contact</span>
+          <h1 className="heading">Elevate Your Presence</h1>
+        </div>
         <p className="text-slate-200/80 md:mt-10 my-5 text-center">
           Contact me to achieve your digital goals.
         </p>

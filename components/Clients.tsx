@@ -8,10 +8,10 @@ import { InfiniteMovingCards } from "./ui/InfiniteCards";
 const Clients = () => {
   return (
     <div id="music" className="py-20 border-t border-white/10">
-      <h1 className="heading">
-        Featured
-        <span className="gradient-text-accent"> Music Projects</span>
-      </h1>
+      <div className="text-center">
+        <span className="gradient-text-accent">Music</span>
+        <h1 className="heading">Featured Projects</h1>
+      </div>
 
       <div className="flex flex-col items-center max-lg:mt-10">
         <div

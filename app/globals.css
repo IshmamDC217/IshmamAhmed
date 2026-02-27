@@ -48,18 +48,15 @@
 
 @layer utilities {
   .heading {
-    @apply font-bold text-4xl md:text-5xl text-center bg-clip-text text-transparent bg-gradient-to-r from-white via-green-100 to-[#cad2c5];
-    filter: drop-shadow(0 0 30px rgba(132, 169, 140, 0.4));
+    @apply font-bold text-2xl md:text-3xl text-center uppercase tracking-[0.25em] text-white;
   }
 
   .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-green-100 to-[#cad2c5];
-    filter: drop-shadow(0 0 30px rgba(132, 169, 140, 0.4));
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-green-100 to-[#cad2c5] uppercase tracking-[0.25em];
   }
 
   .gradient-text-accent {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#84a98c] via-[#a3b18a] to-[#84a98c];
-    filter: drop-shadow(0 0 20px rgba(132, 169, 140, 0.6));
+    @apply block text-xs md:text-sm font-medium uppercase tracking-[0.3em] text-[#84a98c]/70 mb-3;
   }
 
   .glass-card {

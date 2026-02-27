@@ -5,9 +5,10 @@ import { Button } from "./ui/MovingBorders";
 const Experience = () => {
   return (
     <div className="py-20 w-full">
-      <h1 className="heading">
-        Work <span className="gradient-text-accent">Experience</span>
-      </h1>
+      <div className="text-center">
+        <span className="gradient-text-accent">Career</span>
+        <h1 className="heading">Work Experience</h1>
+      </div>
 
       <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
         {workExperience.map((card) => (
