@@ -24,11 +24,11 @@ const RecentProjects = () => {
                 title={item.title}
                 href={item.link}
               >
-                <div className="relative flex items-center justify-center w-[80vw] sm:w-[45vw] lg:w-[36vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10 rounded-xl border border-white/20">
+                <div className="relative flex items-center justify-center w-[65vw] sm:w-[45vw] lg:w-[36vw] overflow-hidden h-[22vh] lg:h-[30vh] mb-6 rounded-xl border border-white/20 bg-black/30">
                   <img
                     src={item.img}
                     alt="cover"
-                    className="z-10 absolute bottom-0 object-cover w-full h-full"
+                    className="z-10 absolute inset-0 object-cover w-full h-full"
                   />
                 </div>
 
