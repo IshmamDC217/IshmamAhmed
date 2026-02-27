@@ -48,7 +48,7 @@ export const FloatingNav = ({
             <Link href="/blog" target="_blank">
               <button
                 type="button"
-                className="text-white/80 bg-[#84a98c]/10 border border-[#84a98c]/30 font-medium rounded-lg text-[10px] px-4 py-2 text-center uppercase tracking-[0.3em] hover:bg-[#84a98c]/20 hover:border-[#84a98c]/50 hover:text-white hover:shadow-[0_0_20px_rgba(132,169,140,0.3)] transition-all duration-300"
+                className="inline-flex items-center justify-center text-white/80 bg-[#84a98c]/10 border border-[#84a98c]/30 font-medium rounded-lg text-[10px] px-4 py-2 leading-none uppercase tracking-[0.3em] hover:bg-[#84a98c]/20 hover:border-[#84a98c]/50 hover:text-white hover:shadow-[0_0_20px_rgba(132,169,140,0.3)] transition-all duration-300"
               >
                 Blog
               </button>
