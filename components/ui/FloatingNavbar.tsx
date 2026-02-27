@@ -45,13 +45,12 @@ export const FloatingNav = ({
 
           {/* Buttons and menu toggle */}
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <Link href="/blog" target="_blank">
-              <button
-                type="button"
-                className="inline-flex items-center justify-center h-[34px] text-white/80 bg-[#84a98c]/10 border border-[#84a98c]/30 font-medium rounded-lg text-[10px] px-4 leading-[34px] uppercase tracking-[0.3em] hover:bg-[#84a98c]/20 hover:border-[#84a98c]/50 hover:text-white hover:shadow-[0_0_20px_rgba(132,169,140,0.3)] transition-all duration-300"
-              >
-                Blog
-              </button>
+            <Link
+              href="/blog"
+              target="_blank"
+              className="inline-flex items-center justify-center h-10 text-white/80 bg-[#84a98c]/10 border border-[#84a98c]/30 font-medium rounded-lg text-[10px] px-4 uppercase tracking-[0.3em] hover:bg-[#84a98c]/20 hover:border-[#84a98c]/50 hover:text-white hover:shadow-[0_0_20px_rgba(132,169,140,0.3)] transition-all duration-300"
+            >
+              Blog
             </Link>
 
             <button
