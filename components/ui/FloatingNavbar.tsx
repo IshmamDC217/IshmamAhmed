@@ -38,7 +38,7 @@ export const FloatingNav = ({
           {/* Logo and title */}
           <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse group">
             <div className="logo-bg"></div>
-            <span className="self-center text-2xl font-bold whitespace-nowrap text-white tracking-[0.1em] group-hover:text-[#cad2c5] transition-colors duration-300">
+            <span className="self-center text-xs font-medium whitespace-nowrap text-white/80 uppercase tracking-[0.3em] group-hover:text-white transition-colors duration-300">
               Ishmam
             </span>
           </Link>
