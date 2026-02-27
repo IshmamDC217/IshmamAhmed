@@ -13,10 +13,10 @@ const RecentProjects = () => {
       </div>
 
       {/* Adjust grid for responsive layout */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-28 lg:gap-48 max-w-7xl mx-auto pb-32 border-b border-white/10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-36 lg:gap-16 max-w-7xl mx-auto pb-32 border-b border-white/10">
         {projects.map((item) => (
           <div
-            className="lg:min-h-[36rem] h-[25rem] flex items-center justify-center w-full"
+            className="lg:min-h-[42rem] h-[25rem] flex items-center justify-center w-full"
             key={item.id}
           >
             <a href={item.link} target="_blank" rel="noopener noreferrer">
@@ -24,7 +24,7 @@ const RecentProjects = () => {
                 title={item.title}
                 href={item.link}
               >
-                <div className="relative flex items-center justify-center w-[80vw] sm:w-[45vw] lg:w-[36vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10 rounded-xl border border-white/20">
+                <div className="relative flex items-center justify-center w-[80vw] sm:w-[45vw] lg:w-[36vw] overflow-hidden h-[20vh] lg:h-[35vh] mb-10 rounded-xl border border-white/20">
                   <img
                     src={item.img}
                     alt="cover"

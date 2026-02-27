@@ -5,7 +5,7 @@ import MagicButton from "./MagicButton";
 
 const Footer = () => {
   return (
-    <footer className="relative w-full pt-20 pb-10 overflow-hidden border-t border-white/10" id="contact">
+    <footer className="relative w-[100vw] -ml-[calc((100vw-100%)/2)] pt-20 pb-10 px-5 sm:px-10 overflow-hidden border-t border-white/10" id="contact">
       {/* Radial gradient overlay */}
       <div
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(132,169,140,0.08),transparent_35%),radial-gradient(circle_at_85%_10%,rgba(82,121,111,0.08),transparent_32%),radial-gradient(circle_at_50%_80%,rgba(163,177,138,0.06),transparent_36%)]"
@@ -21,7 +21,7 @@ const Footer = () => {
         />
       </div>
 
-      <div className="relative flex flex-col items-center">
+      <div className="relative flex flex-col items-center max-w-7xl mx-auto">
         <div className="text-center lg:max-w-[45vw]">
           <span className="gradient-text-accent">Contact</span>
           <h1 className="heading">Elevate Your Presence</h1>
@@ -37,7 +37,7 @@ const Footer = () => {
           />
         </a>
       </div>
-      <div className="relative flex mt-16 md:flex-row flex-col justify-between items-center">
+      <div className="relative flex mt-16 md:flex-row flex-col justify-between items-center max-w-7xl mx-auto">
         <p className="text-[10px] font-medium uppercase tracking-[0.3em] text-white/30">
           &copy; 2026 Ishmam Ahmed
         </p>
