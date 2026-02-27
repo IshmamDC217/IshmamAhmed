@@ -77,9 +77,9 @@ export const BentoGridItem = ({
         className
       )}
       style={{
-        background: "rgba(4,7,29,0.7)",
+        background: "rgba(8,18,12,0.85)",
         backgroundImage:
-          "linear-gradient(135deg, rgba(4,7,29,0.8) 0%, rgba(12,14,35,0.6) 100%)",
+          "linear-gradient(135deg, rgba(8,18,12,0.9) 0%, rgba(12,24,16,0.7) 100%)",
       }}
     >
       {/* add img divs */}

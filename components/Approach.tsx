@@ -32,7 +32,7 @@ const Approach = () => {
         >
           <CanvasRevealEffect
             animationSpeed={3}
-            containerClassName="bg-slate-900 rounded-3xl overflow-hidden"
+            containerClassName="bg-[#1a2e22] rounded-3xl overflow-hidden"
             colors={[
               [255, 166, 158],
               [221, 255, 247],
@@ -79,7 +79,7 @@ const Card = ({
       className="border border-white/10 bg-white/5 backdrop-blur-2xl group/canvas-card flex items-center justify-center
        max-w-sm w-full mx-auto p-4 relative lg:h-[35rem] rounded-3xl hover:border-[#84a98c]/40 hover:shadow-[0_0_35px_-8px_rgba(132,169,140,0.4)] transition-all duration-300"
       style={{
-        background: "rgba(4,7,29,0.7)",
+        background: "rgba(8,18,12,0.85)",
         borderRadius: `calc(1.75rem* 0.96)`,
       }}
     >

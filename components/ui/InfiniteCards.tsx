@@ -94,7 +94,7 @@ export const InfiniteMovingCards = ({
              bg-white/5 backdrop-blur-2xl flex-shrink-0 p-5 md:p-16 md:w-[60vw]
              hover:border-[#84a98c]/40 hover:shadow-[0_0_35px_-8px_rgba(132,169,140,0.4)] transition-all duration-300"
             style={{
-              background: "rgba(4,7,29,0.7)",
+              background: "rgba(8,18,12,0.85)",
             }}
             // change to idx cuz we have the same name
             key={idx}
