@@ -22,7 +22,7 @@ const LeedsLogo = "/university-of-leeds-white.png";
 const RedisLogo = "/redis-white.png";
 
 const experience = [
-    { role: "Software Engineer", company: "3G Telecoms", period: "2023 – Present" },
+    { role: "Software Engineer", company: "Acudo", period: "2023 – Present" },
 ];
 
 const education = [

@@ -144,7 +144,7 @@ export const workExperience = [
   {
     id: 1,
     title: "Software Engineer",
-    desc: "Worked on full-stack tasks on a day-to-day basis, creating multiple internal tools and systems for G Telecoms. Also developed personal projects independently and collaboratively with peers.",
+    desc: "Worked on full-stack tasks on a day-to-day basis, creating multiple internal tools and systems for Acudo. Also developed personal projects independently and collaboratively with peers.",
     className: "md:col-span-2",
     thumbnail: "/exp1.gif",
   },

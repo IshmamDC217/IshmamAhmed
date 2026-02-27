@@ -16,7 +16,7 @@ const RecentProjects = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-28 lg:gap-40 max-w-7xl mx-auto pb-32 border-b border-white/10 place-items-center">
         {projects.map((item) => (
           <div
-            className="lg:min-h-[32.5rem] h-[28rem] flex items-center justify-center w-full mx-auto"
+            className="lg:min-h-[38rem] h-[32rem] flex items-center justify-center w-full mx-auto"
             key={item.id}
           >
             <a href={item.link} target="_blank" rel="noopener noreferrer">
@@ -24,7 +24,7 @@ const RecentProjects = () => {
                 title={item.title}
                 href={item.link}
               >
-                <div className="relative flex items-center justify-center w-[65vw] sm:w-[45vw] lg:w-[36vw] overflow-hidden h-[22vh] lg:h-[30vh] mb-6 rounded-xl border border-white/20 bg-black/30">
+                <div className="relative flex items-center justify-center w-[65vw] sm:w-[45vw] lg:w-[36vw] overflow-hidden h-[25vh] lg:h-[33vh] mb-6 rounded-xl border border-white/20 bg-black/30">
                   <img
                     src={item.img}
                     alt="cover"
