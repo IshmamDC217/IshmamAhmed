@@ -36,7 +36,7 @@ const Hero = () => {
           />
         </div>
 
-        <div className="flex justify-center relative my-20 z-10">
+        <div className="flex justify-center relative mt-36 mb-20 z-10">
           <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
             {/* Sparkles Background Wrapper with faster fade-in effect */}
             <motion.div
@@ -60,7 +60,7 @@ const Hero = () => {
               <span className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#ffffff_0%,#3b82f6_20%,#06b6d4_40%,#3b82f6_60%,#ffffff_80%,#3b82f6_100%)]" />
               <span className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite_reverse] bg-[conic-gradient(from_90deg_at_50%_50%,#ffffff_0%,#06b6d4_25%,#3b82f6_50%,#06b6d4_75%,#ffffff_100%)] opacity-60" />
               <img
-                src="/ish.png"
+                src="/ish2.png"
                 alt="Ishmam Ahmed"
                 className="relative max-w-[250px] md:max-w-[300px] lg:max-w-[400px] rounded-full drop-shadow-[0_0_40px_rgba(59,130,246,0.55)]"
               />
