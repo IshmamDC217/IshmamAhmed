@@ -57,9 +57,9 @@ const config: Config = {
           DEFAULT: "linear-gradient(90deg, #0A2A5E 0%, #376BBF 100%)", // Darker gradient for a bold look
         },
         glow: {
-          blue: "rgba(59,130,246,0.4)",
-          cyan: "rgba(6,182,212,0.3)",
-          indigo: "rgba(99,102,241,0.3)",
+          sage: "rgba(132,169,140,0.4)",
+          olive: "rgba(163,177,138,0.3)",
+          forest: "rgba(82,121,111,0.3)",
         },
         background: "#050711", // Very dark navy-black background
         foreground: "#E3E7EE", // Softer light gray for readability

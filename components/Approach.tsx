@@ -19,7 +19,7 @@ const Approach = () => {
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
-            containerClassName="bg-blue-900 rounded-3xl overflow-hidden"
+            containerClassName="bg-[#2d3a2e] rounded-3xl overflow-hidden"
           />
         </Card>
         <Card
@@ -48,7 +48,7 @@ const Approach = () => {
         >
           <CanvasRevealEffect
             animationSpeed={3}
-            containerClassName="bg-indigo-900 rounded-3xl overflow-hidden"
+            containerClassName="bg-[#354f52] rounded-3xl overflow-hidden"
             colors={[[125, 211, 252]]}
           />
         </Card>
@@ -76,7 +76,7 @@ const Card = ({
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       className="border border-white/10 bg-white/5 backdrop-blur-2xl group/canvas-card flex items-center justify-center
-       max-w-sm w-full mx-auto p-4 relative lg:h-[35rem] rounded-3xl hover:border-blue-400/40 hover:shadow-[0_0_35px_-8px_rgba(59,130,246,0.4)] transition-all duration-300"
+       max-w-sm w-full mx-auto p-4 relative lg:h-[35rem] rounded-3xl hover:border-[#84a98c]/40 hover:shadow-[0_0_35px_-8px_rgba(132,169,140,0.4)] transition-all duration-300"
       style={{
         background: "rgba(4,7,29,0.7)",
         borderRadius: `calc(1.75rem* 0.96)`,
@@ -132,15 +132,15 @@ const AceternityIcon = ({ step }: { step: string }) => {
       <button className="relative inline-flex overflow-hidden rounded-full p-[2px] ">
         <span
           className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite]
-         bg-[conic-gradient(from_90deg_at_50%_50%,#ffffff_0%,#3b82f6_20%,#06b6d4_40%,#3b82f6_60%,#ffffff_80%,#3b82f6_100%)]"
+         bg-[conic-gradient(from_90deg_at_50%_50%,#ffffff_0%,#84a98c_20%,#a3b18a_40%,#84a98c_60%,#ffffff_80%,#84a98c_100%)]"
         />
         <span
           className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite_reverse]
-         bg-[conic-gradient(from_90deg_at_50%_50%,#ffffff_0%,#06b6d4_25%,#3b82f6_50%,#06b6d4_75%,#ffffff_100%)] opacity-60"
+         bg-[conic-gradient(from_90deg_at_50%_50%,#ffffff_0%,#a3b18a_25%,#84a98c_50%,#a3b18a_75%,#ffffff_100%)] opacity-60"
         />
         <span
           className="relative inline-flex h-full w-full cursor-pointer items-center
-        justify-center rounded-full bg-gradient-to-br from-[#0a0a0f] via-[#0f0f1a] to-[#0a0a0f] px-5 py-2 text-blue-300 backdrop-blur-3xl font-bold text-2xl border border-white/20"
+        justify-center rounded-full bg-gradient-to-br from-[#0a0a0f] via-[#0f0f1a] to-[#0a0a0f] px-5 py-2 text-[#a3b18a] backdrop-blur-3xl font-bold text-2xl border border-white/20"
         >
           {step}
         </span>

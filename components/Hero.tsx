@@ -13,15 +13,15 @@ const Hero = () => {
         <div>
           <Spotlight
             className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
-            fill="rgba(0, 68, 255, 0.3)" // Blue theme
+            fill="rgba(132, 169, 140, 0.25)" // Blue theme
           />
           <Spotlight
             className="h-[80vh] w-[50vw] top-10 left-full"
-            fill="rgba(0, 112, 255, 0.3)" // Light blue
+            fill="rgba(163, 177, 138, 0.2)" // Light blue
           />
           <Spotlight
             className="left-80 top-28 h-[80vh] w-[50vw]"
-            fill="rgba(30, 30, 60, 0.3)" // Darker blue
+            fill="rgba(82, 121, 111, 0.2)" // Darker blue
           />
         </div>
 
@@ -57,12 +57,12 @@ const Hero = () => {
             </motion.div>
 
             <div className="z-10 relative inline-flex mb-8 rounded-full p-[2px] overflow-hidden">
-              <span className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#ffffff_0%,#3b82f6_20%,#06b6d4_40%,#3b82f6_60%,#ffffff_80%,#3b82f6_100%)]" />
-              <span className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite_reverse] bg-[conic-gradient(from_90deg_at_50%_50%,#ffffff_0%,#06b6d4_25%,#3b82f6_50%,#06b6d4_75%,#ffffff_100%)] opacity-60" />
+              <span className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#ffffff_0%,#84a98c_20%,#a3b18a_40%,#84a98c_60%,#ffffff_80%,#84a98c_100%)]" />
+              <span className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite_reverse] bg-[conic-gradient(from_90deg_at_50%_50%,#ffffff_0%,#a3b18a_25%,#84a98c_50%,#a3b18a_75%,#ffffff_100%)] opacity-60" />
               <img
                 src="/ish2.png"
                 alt="Ishmam Ahmed"
-                className="relative max-w-[250px] md:max-w-[300px] lg:max-w-[400px] rounded-full drop-shadow-[0_0_40px_rgba(59,130,246,0.55)]"
+                className="relative max-w-[250px] md:max-w-[300px] lg:max-w-[400px] rounded-full drop-shadow-[0_0_40px_rgba(132,169,140,0.55)]"
               />
             </div>
 

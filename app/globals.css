@@ -48,29 +48,29 @@
 
 @layer utilities {
   .heading {
-    @apply font-bold text-4xl md:text-5xl text-center bg-clip-text text-transparent bg-gradient-to-r from-white via-blue-100 to-cyan-200;
-    filter: drop-shadow(0 0 30px rgba(59, 130, 246, 0.4));
+    @apply font-bold text-4xl md:text-5xl text-center bg-clip-text text-transparent bg-gradient-to-r from-white via-green-100 to-[#cad2c5];
+    filter: drop-shadow(0 0 30px rgba(132, 169, 140, 0.4));
   }
 
   .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-blue-100 to-cyan-200;
-    filter: drop-shadow(0 0 30px rgba(59, 130, 246, 0.4));
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-green-100 to-[#cad2c5];
+    filter: drop-shadow(0 0 30px rgba(132, 169, 140, 0.4));
   }
 
   .gradient-text-accent {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-500;
-    filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.6));
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#84a98c] via-[#a3b18a] to-[#84a98c];
+    filter: drop-shadow(0 0 20px rgba(132, 169, 140, 0.6));
   }
 
   .glass-card {
     @apply border border-white/10 bg-white/5 backdrop-blur-2xl rounded-2xl;
-    @apply hover:border-blue-400/40 hover:shadow-[0_0_35px_-8px_rgba(59,130,246,0.4)];
+    @apply hover:border-[#84a98c]/40 hover:shadow-[0_0_35px_-8px_rgba(132,169,140,0.4)];
     @apply transition-all duration-300;
   }
 
   .glass-card-strong {
     @apply border border-white/10 bg-white/5 backdrop-blur-2xl rounded-3xl;
-    @apply hover:border-blue-400/70 hover:shadow-[0_0_35px_-8px_rgba(59,130,246,0.4)] hover:shadow-lg;
+    @apply hover:border-[#84a98c]/70 hover:shadow-[0_0_35px_-8px_rgba(132,169,140,0.4)] hover:shadow-lg;
     @apply transition-all duration-300 hover:scale-[1.02];
   }
 

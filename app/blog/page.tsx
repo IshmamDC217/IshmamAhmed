@@ -21,10 +21,10 @@ const BlogPage = () => {
         <main className="relative bg-[#050711] min-h-screen px-5 sm:px-10 py-20 flex justify-center overflow-hidden">
             {/* Ambient background */}
             <div className="fixed inset-0 -z-10 pointer-events-none">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_12%,rgba(10,18,34,0.9),transparent_60%),radial-gradient(circle_at_78%_18%,rgba(30,58,138,0.22),transparent_50%)]" />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_12%,rgba(10,24,18,0.9),transparent_60%),radial-gradient(circle_at_78%_18%,rgba(82,121,111,0.18),transparent_50%)]" />
                 <div className="hidden lg:block">
-                    <div className="absolute top-1/3 left-[10%] h-72 w-72 bg-gradient-to-r from-blue-500/20 to-cyan-400/15 rounded-full blur-[140px] animate-pulse" />
-                    <div className="absolute bottom-1/4 right-[10%] h-80 w-80 bg-gradient-to-r from-indigo-400/15 to-purple-500/10 rounded-full blur-[150px] animate-pulse" style={{ animationDelay: '1.5s' }} />
+                    <div className="absolute top-1/3 left-[10%] h-72 w-72 bg-gradient-to-r from-[#84a98c]/20 to-[#a3b18a]/15 rounded-full blur-[140px] animate-pulse" />
+                    <div className="absolute bottom-1/4 right-[10%] h-80 w-80 bg-gradient-to-r from-[#52796f]/15 to-[#6b8f71]/10 rounded-full blur-[150px] animate-pulse" style={{ animationDelay: '1.5s' }} />
                 </div>
             </div>
             <div className="w-full max-w-3xl">

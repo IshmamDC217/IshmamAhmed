@@ -12,7 +12,7 @@ const Experience = () => {
       <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
         {workExperience.map((card) => (
           <Button
-            glowColor="aquamarine"
+            glowColor="#84a98c"
             key={card.id}
             duration={Math.floor(Math.random() * 10000) + 10000}
             borderRadius="1.75rem"

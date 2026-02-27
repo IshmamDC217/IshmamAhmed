@@ -30,7 +30,7 @@ const GridGlobe = () => {
     autoRotateSpeed: 0.5,
   };
 
-  const colors = ["#06b6d4", "#3b82f6", "#6366f1"];
+  const colors = ["#a3b18a", "#84a98c", "#52796f"];
   
   const sampleArcs = [
     {

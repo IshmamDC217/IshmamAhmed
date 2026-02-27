@@ -73,7 +73,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-2xl group/bento hover:border-blue-400/40 hover:shadow-[0_0_35px_-8px_rgba(59,130,246,0.4)] hover:scale-[1.01] transition-all duration-300 justify-between flex flex-col space-y-4",
+        "row-span-1 relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-2xl group/bento hover:border-[#84a98c]/40 hover:shadow-[0_0_35px_-8px_rgba(132,169,140,0.4)] hover:scale-[1.01] transition-all duration-300 justify-between flex flex-col space-y-4",
         className
       )}
       style={{

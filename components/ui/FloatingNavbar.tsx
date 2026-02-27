@@ -29,16 +29,16 @@ export const FloatingNav = ({
       <div className="max-w-screen-xl mx-auto px-4 py-4">
         <div
           className={cn(
-            "flex flex-wrap items-center justify-between rounded-full border px-5 py-2 backdrop-blur-xl shadow-lg transition-all duration-500",
+            "flex flex-wrap items-center justify-between rounded-2xl border px-5 py-2.5 backdrop-blur-2xl shadow-lg transition-all duration-500",
             scrolled
-              ? "border-white/20 bg-gradient-to-r from-blue-500/90 via-blue-600/90 to-indigo-600/90 shadow-[0_8px_32px_rgba(59,130,246,0.3)]"
+              ? "border-[#84a98c]/30 bg-[#050711]/80 shadow-[0_8px_32px_rgba(132,169,140,0.15)]"
               : "border-white/10 bg-white/5"
           )}
         >
           {/* Logo and title */}
-          <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+          <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse group">
             <div className="logo-bg"></div>
-            <span className="self-center text-2xl font-bold whitespace-nowrap text-white tracking-[0.1em]">
+            <span className="self-center text-2xl font-bold whitespace-nowrap text-white tracking-[0.1em] group-hover:text-[#cad2c5] transition-colors duration-300">
               Ishmam
             </span>
           </Link>
@@ -48,7 +48,7 @@ export const FloatingNav = ({
             <Link href="/blog" target="_blank">
               <button
                 type="button"
-                className="text-white bg-gradient-to-r from-blue-500 to-indigo-600 font-bold rounded-full text-sm px-5 py-2.5 text-center uppercase tracking-wide hover:shadow-[0_0_20px_rgba(96,165,250,0.7)] hover:scale-105 transition-all duration-300"
+                className="text-white bg-[#84a98c]/20 border border-[#84a98c]/40 font-semibold rounded-xl text-sm px-5 py-2.5 text-center uppercase tracking-wide hover:bg-[#84a98c]/30 hover:border-[#84a98c]/60 hover:shadow-[0_0_20px_rgba(132,169,140,0.4)] hover:scale-105 transition-all duration-300"
               >
                 Blog
               </button>
@@ -56,7 +56,7 @@ export const FloatingNav = ({
 
             <button
               type="button"
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-full md:hidden text-white hover:bg-white/10 focus:outline-none transition-all"
+              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-xl md:hidden text-white hover:bg-white/10 focus:outline-none transition-all"
               onClick={() => setMenuOpen(!menuOpen)}
               aria-expanded={menuOpen}
             >
@@ -77,7 +77,7 @@ export const FloatingNav = ({
             )}
             id="navbar-sticky"
           >
-            <ul className="flex flex-col w-full p-2 mt-4 font-medium rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-transparent md:justify-center">
+            <ul className="flex flex-col w-full p-2 mt-4 font-medium rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl md:space-x-2 md:flex-row md:mt-0 md:border-0 md:bg-transparent md:justify-center">
               {navItems
                 .filter(item => item.name !== "Music")
                 .map((navItem, idx) => (
@@ -92,7 +92,7 @@ export const FloatingNav = ({
                           ? "noopener noreferrer"
                           : undefined
                       }
-                      className="block py-2 px-3 text-left rounded-full text-white/80 hover:text-white hover:bg-white/10 hover:shadow-[0_0_15px_rgba(59,130,246,0.3)] transition-all duration-300 text-sm uppercase tracking-wide font-semibold"
+                      className="block py-2 px-4 text-left rounded-xl text-white/70 hover:text-white hover:bg-[#84a98c]/15 hover:shadow-[0_0_15px_rgba(132,169,140,0.2)] transition-all duration-300 text-sm uppercase tracking-wide font-semibold"
                     >
                       {navItem.name}
                     </Link>

@@ -55,7 +55,7 @@ const RecentProjects = () => {
                   </div>
 
                   <div className="flex justify-center items-center">
-                    <p className="flex lg:text-xl md:text-xs text-sm text-blue-300 group-hover:text-cyan-300 transition-colors">
+                    <p className="flex lg:text-xl md:text-xs text-sm text-[#a3b18a] group-hover:text-[#cad2c5] transition-colors">
                       Visit Site
                     </p>
                   </div>

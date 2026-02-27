@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="relative w-full pt-20 pb-10 overflow-hidden border-t border-white/10" id="contact">
       {/* Radial gradient overlay */}
       <div
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(59,130,246,0.08),transparent_35%),radial-gradient(circle_at_85%_10%,rgba(16,185,129,0.08),transparent_32%),radial-gradient(circle_at_50%_80%,rgba(129,140,248,0.06),transparent_36%)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(132,169,140,0.08),transparent_35%),radial-gradient(circle_at_85%_10%,rgba(82,121,111,0.08),transparent_32%),radial-gradient(circle_at_50%_80%,rgba(163,177,138,0.06),transparent_36%)]"
         aria-hidden
       />
 
@@ -48,7 +48,7 @@ const Footer = () => {
               href={info.link || "#"}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-blur-xl bg-white/5 rounded-lg border border-white/10 hover:border-blue-400/40 hover:bg-white/10 hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] transition-all duration-300"
+              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-blur-xl bg-white/5 rounded-lg border border-white/10 hover:border-[#84a98c]/40 hover:bg-white/10 hover:shadow-[0_0_20px_rgba(132,169,140,0.3)] transition-all duration-300"
             >
               <img src={info.img} alt="icons" width={20} height={20} />
             </a>

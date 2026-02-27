@@ -92,7 +92,7 @@ export const InfiniteMovingCards = ({
             //   change md:w-[450px] to md:w-[60vw] , px-8 py-6 to p-16, border-slate-700 to border-slate-800
             className="w-[90vw] max-w-full relative rounded-2xl border border-white/10
              bg-white/5 backdrop-blur-2xl flex-shrink-0 p-5 md:p-16 md:w-[60vw]
-             hover:border-blue-400/40 hover:shadow-[0_0_35px_-8px_rgba(59,130,246,0.4)] transition-all duration-300"
+             hover:border-[#84a98c]/40 hover:shadow-[0_0_35px_-8px_rgba(132,169,140,0.4)] transition-all duration-300"
             style={{
               background: "rgba(4,7,29,0.7)",
             }}
