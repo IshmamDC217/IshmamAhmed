@@ -27,11 +27,11 @@ const Hero = () => {
 
         {/* Main hero content */}
         <div
-          className="h-1/2 w-full bg-[#050711] bg-grid-white/[0.02]
+          className="h-1/2 w-full bg-[#080a08] bg-grid-white/[0.02]
        absolute top-0 left-0 flex items-center justify-center"
         >
           <div
-            className="absolute pointer-events-none inset-0 flex items-center justify-center bg-[#050711]
+            className="absolute pointer-events-none inset-0 flex items-center justify-center bg-[#080a08]
          [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
           />
         </div>

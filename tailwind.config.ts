@@ -28,7 +28,7 @@ const config: Config = {
     extend: {
       colors: {
         black: {
-          DEFAULT: "#050711", // Extremely dark black-blue for background
+          DEFAULT: "#080a08", // Extremely dark neutral for background
           100: "#0A0C19", // Very dark navy for shadows and borders
           200: "rgba(17, 25, 40, 0.95)", // Translucent dark background
           300: "rgba(255, 255, 255, 0.1)", // Light translucent white for subtle highlights
@@ -61,7 +61,7 @@ const config: Config = {
           olive: "rgba(163,177,138,0.3)",
           forest: "rgba(82,121,111,0.3)",
         },
-        background: "#050711", // Very dark navy-black background
+        background: "#080a08", // Very dark neutral background
         foreground: "#E3E7EE", // Softer light gray for readability
         primary: {
           DEFAULT: "#0A2A5E", // Very dark blue for primary buttons

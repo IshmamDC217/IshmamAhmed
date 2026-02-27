@@ -31,7 +31,7 @@ export const FloatingNav = ({
           className={cn(
             "rounded-2xl border backdrop-blur-2xl shadow-lg transition-all duration-500",
             scrolled
-              ? "border-[#84a98c]/30 bg-[#050711]/80 shadow-[0_8px_32px_rgba(132,169,140,0.15)]"
+              ? "border-[#84a98c]/30 bg-[#080a08]/80 shadow-[0_8px_32px_rgba(132,169,140,0.15)]"
               : "border-white/10 bg-white/5"
           )}
         >

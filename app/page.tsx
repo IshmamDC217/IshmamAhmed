@@ -12,7 +12,7 @@ import { FloatingNav } from "@/components/ui/FloatingNavbar";
 
 const Home = () => {
   return (
-    <main className="relative bg-[#050711] flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+    <main className="relative bg-[#080a08] flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       {/* Global ambient background */}
       <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_12%,rgba(10,24,18,0.9),transparent_60%),radial-gradient(circle_at_78%_18%,rgba(82,121,111,0.18),transparent_50%),radial-gradient(circle_at_55%_80%,rgba(52,78,65,0.22),transparent_60%)]" />

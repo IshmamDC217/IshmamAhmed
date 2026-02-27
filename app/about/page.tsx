@@ -52,7 +52,7 @@ const navItems = [
 
 export default function About() {
     return (
-        <section className="relative min-h-screen px-6 pt-24 pb-32 bg-[#050711] text-white overflow-hidden">
+        <section className="relative min-h-screen px-6 pt-24 pb-32 bg-[#080a08] text-white overflow-hidden">
             {/* Ambient background */}
             <div className="absolute inset-0 -z-10">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_12%,rgba(10,24,18,0.9),transparent_60%),radial-gradient(circle_at_78%_18%,rgba(82,121,111,0.18),transparent_50%)]" />

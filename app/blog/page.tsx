@@ -18,7 +18,7 @@ const BlogPage = () => {
     });
 
     return (
-        <main className="relative bg-[#050711] min-h-screen px-5 sm:px-10 py-20 flex justify-center overflow-hidden">
+        <main className="relative bg-[#080a08] min-h-screen px-5 sm:px-10 py-20 flex justify-center overflow-hidden">
             {/* Ambient background */}
             <div className="fixed inset-0 -z-10 pointer-events-none">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_12%,rgba(10,24,18,0.9),transparent_60%),radial-gradient(circle_at_78%_18%,rgba(82,121,111,0.18),transparent_50%)]" />
