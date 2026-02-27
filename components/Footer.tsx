@@ -26,7 +26,7 @@ const Footer = () => {
           <span className="gradient-text-accent">Contact</span>
           <h1 className="heading">Elevate Your Presence</h1>
         </div>
-        <p className="text-slate-200/80 md:mt-10 my-5 text-center">
+        <p className="text-white/40 md:mt-10 my-5 text-center text-xs uppercase tracking-[0.25em]">
           Contact me to achieve your digital goals.
         </p>
         <a href="mailto:ishmam.ahmed24@gmail.com">
@@ -38,8 +38,8 @@ const Footer = () => {
         </a>
       </div>
       <div className="relative flex mt-16 md:flex-row flex-col justify-between items-center">
-        <p className="md:text-base text-sm md:font-normal font-light text-white/60">
-          Copyright &copy; 2025 Ishmam Ahmed
+        <p className="text-[10px] font-medium uppercase tracking-[0.3em] text-white/30">
+          &copy; 2026 Ishmam Ahmed
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">

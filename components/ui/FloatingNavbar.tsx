@@ -48,7 +48,7 @@ export const FloatingNav = ({
             <Link href="/blog" target="_blank">
               <button
                 type="button"
-                className="text-white bg-[#84a98c]/20 border border-[#84a98c]/40 font-semibold rounded-xl text-sm px-5 py-2.5 text-center uppercase tracking-wide hover:bg-[#84a98c]/30 hover:border-[#84a98c]/60 hover:shadow-[0_0_20px_rgba(132,169,140,0.4)] hover:scale-105 transition-all duration-300"
+                className="text-white/80 bg-[#84a98c]/10 border border-[#84a98c]/30 font-medium rounded-lg text-[10px] px-4 py-2 text-center uppercase tracking-[0.3em] hover:bg-[#84a98c]/20 hover:border-[#84a98c]/50 hover:text-white hover:shadow-[0_0_20px_rgba(132,169,140,0.3)] transition-all duration-300"
               >
                 Blog
               </button>
@@ -92,7 +92,7 @@ export const FloatingNav = ({
                           ? "noopener noreferrer"
                           : undefined
                       }
-                      className="block py-2 px-4 text-left rounded-xl text-white/70 hover:text-white hover:bg-[#84a98c]/15 hover:shadow-[0_0_15px_rgba(132,169,140,0.2)] transition-all duration-300 text-sm uppercase tracking-wide font-semibold"
+                      className="block py-2 px-4 text-left rounded-lg text-white/50 hover:text-white/80 hover:bg-[#84a98c]/10 transition-all duration-300 text-[10px] uppercase tracking-[0.3em] font-medium"
                     >
                       {navItem.name}
                     </Link>

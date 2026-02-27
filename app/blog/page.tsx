@@ -33,7 +33,7 @@ const BlogPage = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
-                    className="text-4xl sm:text-5xl font-bold mb-6 text-center gradient-text"
+                    className="text-xl sm:text-2xl font-bold mb-6 text-center gradient-text"
                 >
                     Welcome to My Odyssey
                 </motion.h1>
@@ -42,19 +42,19 @@ const BlogPage = () => {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.3 }}
-                    className="text-white/70 text-center max-w-2xl mx-auto mb-10"
+                    className="text-white/40 text-center max-w-2xl mx-auto mb-10 text-[10px] uppercase tracking-[0.25em] leading-relaxed"
                 >
                     A space where I document my path through code, music, and travel — sharing the experiences, lessons, and highlights along the way.
                 </motion.p>
 
                 {/* Filter */}
-                <div className="mb-10 text-white/80 text-sm text-right">
+                <div className="mb-10 text-white/40 text-[10px] uppercase tracking-[0.25em] text-right">
                     <label htmlFor="sortOrder" className="mr-2">
                         Sort by:
                     </label>
                     <select
                         id="sortOrder"
-                        className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-lg px-3 py-1.5"
+                        className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-lg px-3 py-1.5 text-[10px] uppercase tracking-[0.2em] text-white/60"
                         value={sortOrder}
                         onChange={(e) =>
                             setSortOrder(e.target.value as "newest" | "oldest")
@@ -81,27 +81,27 @@ const BlogPage = () => {
                             className="relative group"
                         >
                             {/* Dot */}
-                            <div className="absolute -left-[30px] top-3 w-3 h-3 bg-white rounded-full shadow-md group-hover:scale-125 transition-transform" />
+                            <div className="absolute -left-[30px] top-3 w-2 h-2 bg-[#84a98c]/60 rounded-full shadow-md group-hover:scale-150 group-hover:bg-[#84a98c] transition-all duration-300" />
 
                             <div className="block group">
                                 {/* Title */}
-                                <h2 className="text-2xl font-semibold text-white mb-1">
+                                <h2 className="text-sm md:text-base font-bold text-white uppercase tracking-[0.15em] mb-1">
                                     {blog.title}
                                 </h2>
 
                                 {/* Date and Location */}
-                                <div className="text-white/50 text-sm flex items-center flex-wrap gap-4 mb-3">
+                                <div className="text-white/30 text-[10px] uppercase tracking-[0.25em] flex items-center flex-wrap gap-4 mb-3">
                                     <span>{blog.date}</span>
                                     {blog.location && (
                                         <span className="flex items-center gap-1">
-                                            <FaMapMarkerAlt className="text-red-500" />
+                                            <FaMapMarkerAlt className="text-[#84a98c]/60" />
                                             {blog.location}
                                         </span>
                                     )}
                                 </div>
 
                                 {/* Content Paragraphs */}
-                                <div className="text-white/70 text-sm leading-relaxed space-y-3 mb-6">
+                                <div className="text-white/50 text-xs tracking-wide leading-relaxed space-y-3 mb-6">
                                     {blog.content.map((paragraph, i) => (
                                         <p key={i}>{paragraph}</p>
                                     ))}

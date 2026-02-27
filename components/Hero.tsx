@@ -13,15 +13,15 @@ const Hero = () => {
         <div>
           <Spotlight
             className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
-            fill="rgba(132, 169, 140, 0.25)" // Blue theme
+            fill="rgba(132, 169, 140, 0.25)"
           />
           <Spotlight
             className="h-[80vh] w-[50vw] top-10 left-full"
-            fill="rgba(163, 177, 138, 0.2)" // Light blue
+            fill="rgba(163, 177, 138, 0.2)"
           />
           <Spotlight
             className="left-80 top-28 h-[80vh] w-[50vw]"
-            fill="rgba(82, 121, 111, 0.2)" // Darker blue
+            fill="rgba(82, 121, 111, 0.2)"
           />
         </div>
 
@@ -68,12 +68,12 @@ const Hero = () => {
 
             <TextGenerateEffect
               words="Crafting Innovative Solutions, One Line of Code at a Time."
-              className="text-center text-3xl md:text-5xl lg:text-6xl gradient-text"
+              className="text-center text-xl md:text-2xl lg:text-3xl gradient-text"
             />
 
             {/* Add motion.p for the paragraph */}
             <motion.p
-              className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl pb-2 text-slate-200/80 tracking-wide"
+              className="text-center mb-4 text-[10px] md:text-xs pb-2 text-white/40 uppercase tracking-[0.25em] max-w-lg mx-auto leading-relaxed"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 2, duration: 0.5 }} // Reduced delay and duration for faster appearance

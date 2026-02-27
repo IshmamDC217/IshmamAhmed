@@ -67,13 +67,13 @@ export default function About() {
                 <div className="text-center">
                     <TextGenerateEffect
                         words="Tech & Creativity: My Expertise"
-                        className="text-4xl md:text-5xl font-bold gradient-text"
+                        className="text-xl md:text-2xl font-bold gradient-text"
                     />
                     {/* Animations */}
-                    <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6 }} className="mt-4 text-lg text-slate-200/80">
+                    <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6 }} className="mt-4 text-xs text-white/40 uppercase tracking-[0.2em] leading-relaxed max-w-xl mx-auto">
                         I’m Ishmam Ahmed, a Software Engineer based in Leeds, UK. I build scalable web apps—and by night, I riff with progressive rock band Metora Cliffs.
                     </motion.p>
-                    <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ delay: 0.8 }} className="mt-6 flex justify-center items-center text-slate-300/80 text-sm gap-4">
+                    <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ delay: 0.8 }} className="mt-6 flex justify-center items-center text-white/40 text-[10px] uppercase tracking-[0.25em] gap-6">
                         <FaMapMarkerAlt className="text-[#84a98c]" /> Leeds, UK
                         <FaGuitar className="text-[#84a98c]" /> Guitarist @ Metora Cliffs
                     </motion.div>
@@ -93,35 +93,35 @@ export default function About() {
                     {skillIcons.map((s, idx) => (
                         <motion.div key={idx} variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }} whileHover={{ scale: 1.1 }} className="flex flex-col items-center">
                             <img src={s.src} alt={s.name} width={48} height={48} />
-                            <span className="mt-2 text-sm text-gray-300">{s.name}</span>
+                            <span className="mt-2 text-[10px] text-white/40 uppercase tracking-[0.2em]">{s.name}</span>
                         </motion.div>
                     ))}
                 </motion.div>
 
                 {/* Experience */}
                 <div>
-                    <motion.h2 initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ delay: 1.4 }} className="text-xl font-semibold mb-4 gradient-text-accent">
+                    <motion.h2 initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ delay: 1.4 }} className="text-xs font-medium mb-4 gradient-text-accent">
                         Experience
                     </motion.h2>
                     {experience.map((exp, idx) => (
                         <motion.div key={idx} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.6 + idx * 0.2 }} className="border border-white/10 bg-white/5 backdrop-blur-2xl rounded-2xl p-5 mb-4 hover:border-[#84a98c]/40 hover:shadow-[0_0_30px_rgba(132,169,140,0.3)] transition-all duration-300">
-                            <h3 className="text-lg font-medium">{exp.role}</h3>
-                            <p className="text-slate-300/80">{exp.company} • {exp.period}</p>
+                            <h3 className="text-sm font-bold uppercase tracking-[0.15em] text-white">{exp.role}</h3>
+                            <p className="text-[10px] text-white/40 uppercase tracking-[0.2em]">{exp.company} • {exp.period}</p>
                         </motion.div>
                     ))}
                 </div>
 
                 {/* Education */}
                 <div>
-                    <motion.h2 initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ delay: 1.8 }} className="text-xl font-semibold mb-4 gradient-text-accent">
+                    <motion.h2 initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ delay: 1.8 }} className="text-xs font-medium mb-4 gradient-text-accent">
                         Education
                     </motion.h2>
                     {education.map((edu, idx) => (
                         <motion.div key={idx} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 2.0 + idx * 0.2 }} className="flex items-center gap-4 border border-white/10 bg-white/5 backdrop-blur-2xl rounded-2xl p-5 mb-4 hover:border-[#84a98c]/40 hover:shadow-[0_0_30px_rgba(132,169,140,0.3)] transition-all duration-300">
                             <img src={edu.logo} alt="University of Leeds logo" width={40} height={40} />
                             <div>
-                                <h3 className="text-lg font-medium">{edu.degree}</h3>
-                                <p className="text-slate-300/80">{edu.institution} • {edu.period}</p>
+                                <h3 className="text-sm font-bold uppercase tracking-[0.15em] text-white">{edu.degree}</h3>
+                                <p className="text-[10px] text-white/40 uppercase tracking-[0.2em]">{edu.institution} • {edu.period}</p>
                             </div>
                         </motion.div>
                     ))}
@@ -129,15 +129,15 @@ export default function About() {
 
                 {/* Licenses */}
                 <div>
-                    <motion.h2 initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ delay: 2.2 }} className="text-xl font-semibold mb-4 gradient-text-accent">
+                    <motion.h2 initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ delay: 2.2 }} className="text-xs font-medium mb-4 gradient-text-accent">
                         Licenses
                     </motion.h2>
                     {licenses.map((lic, idx) => (
                         <motion.a key={idx} href={lic.link} target="_blank" rel="noopener noreferrer" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 2.4 + idx * 0.2 }} className="flex items-center gap-4 border border-white/10 bg-white/5 backdrop-blur-2xl rounded-2xl p-5 mb-4 hover:border-[#84a98c]/40 hover:shadow-[0_0_30px_rgba(132,169,140,0.3)] transition-all duration-300 hover:bg-gray-800">
                             <img src={lic.logo} alt={`${lic.title} logo`} width={40} height={40} />
                             <div>
-                                <h3 className="text-lg font-medium">{lic.title}</h3>
-                                <p className="text-slate-300/80">{lic.issuer}</p>
+                                <h3 className="text-sm font-bold uppercase tracking-[0.15em] text-white">{lic.title}</h3>
+                                <p className="text-[10px] text-white/40 uppercase tracking-[0.2em]">{lic.issuer}</p>
                             </div>
                         </motion.a>
                     ))}
@@ -148,7 +148,7 @@ export default function About() {
                     <a href="/#contact" className="group relative inline-flex h-14 overflow-hidden rounded-2xl p-[2px]">
                         <span className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#ffffff_0%,#84a98c_20%,#a3b18a_40%,#84a98c_60%,#ffffff_80%,#84a98c_100%)]" />
                         <span className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite_reverse] bg-[conic-gradient(from_90deg_at_50%_50%,#ffffff_0%,#a3b18a_25%,#84a98c_50%,#a3b18a_75%,#ffffff_100%)] opacity-60" />
-                        <span className="relative inline-flex h-full w-full items-center justify-center rounded-2xl bg-gradient-to-br from-[#0a0a0f] via-[#0f0f1a] to-[#0a0a0f] px-8 text-sm font-bold text-white border border-white/20 group-hover:border-[#84a98c]/50 group-hover:shadow-[0_0_40px_rgba(132,169,140,0.4)] transition-all duration-300 gap-2">
+                        <span className="relative inline-flex h-full w-full items-center justify-center rounded-2xl bg-gradient-to-br from-[#0a0a0f] via-[#0f0f1a] to-[#0a0a0f] px-8 text-xs font-medium text-white/80 uppercase tracking-[0.25em] border border-white/20 group-hover:border-[#84a98c]/50 group-hover:shadow-[0_0_40px_rgba(132,169,140,0.4)] transition-all duration-300 gap-2">
                             Let&apos;s connect <IoIosArrowForward className="ml-2" />
                         </span>
                     </a>

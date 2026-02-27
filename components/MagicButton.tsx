@@ -31,7 +31,7 @@ const MagicButton = ({
 
       <span
         className={`relative inline-flex h-full w-full cursor-pointer items-center justify-center rounded-2xl
-             bg-gradient-to-br from-[#0a0a0f] via-[#0f0f1a] to-[#0a0a0f] px-8 text-sm font-bold text-white backdrop-blur-3xl gap-3
+             bg-gradient-to-br from-[#0a0a0f] via-[#0f0f1a] to-[#0a0a0f] px-8 text-xs font-medium text-white/80 uppercase tracking-[0.25em] backdrop-blur-3xl gap-3
              border border-white/20 group-hover:border-[#84a98c]/50
              group-hover:shadow-[0_0_40px_rgba(132,169,140,0.4)]
              transition-all duration-300 ${otherClasses}`}
