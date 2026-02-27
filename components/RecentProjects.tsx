@@ -32,11 +32,11 @@ const RecentProjects = () => {
                   />
                 </div>
 
-                <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+                <h1 className="font-bold text-sm md:text-base lg:text-lg uppercase tracking-[0.2em] text-white line-clamp-1">
                   {item.title}
                 </h1>
 
-                <p className="lg:text-xl lg:font-normal font-light text-sm" style={{ color: "#BEC1DD", margin: "1vh 0" }}>
+                <p className="text-xs md:text-sm tracking-wide leading-relaxed text-white/50" style={{ margin: "1vh 0" }}>
                   {item.des}
                 </p>
 
@@ -56,8 +56,8 @@ const RecentProjects = () => {
                   </div>
 
                   <div className="flex justify-center items-center">
-                    <p className="flex lg:text-xl md:text-xs text-sm text-[#a3b18a] group-hover:text-[#cad2c5] transition-colors">
-                      Visit Site
+                    <p className="flex text-xs md:text-sm uppercase tracking-[0.2em] text-[#84a98c]/70 group-hover:text-[#cad2c5] transition-colors">
+                      Visit
                     </p>
                   </div>
                 </div>

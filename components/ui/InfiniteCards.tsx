@@ -105,21 +105,18 @@ export const InfiniteMovingCards = ({
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
               {/* change text color, text-lg */}
-              <span className=" relative z-20 text-sm md:text-lg leading-[1.6] text-white font-normal">
+              <span className=" relative z-20 text-xs md:text-sm leading-[1.8] text-white/70 font-normal tracking-wide">
                 {item.quote}
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
-                {/* add this div for the profile img */}
                 <div className="me-3 w-32">
                   <img src="/guitar.png" alt="profile" />
                 </div>
                 <span className="flex flex-col gap-1">
-                  {/* change text color, font-normal to font-bold, text-xl */}
-                  <span className="text-xl font-bold leading-[1.6] text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.1)]">
+                  <span className="text-sm md:text-base font-bold leading-[1.6] text-white uppercase tracking-[0.2em]">
                     {item.name}
                   </span>
-                  {/* change text color */}
-                  <span className=" text-sm leading-[1.6] text-white-200 font-normal">
+                  <span className="text-[10px] md:text-xs leading-[1.6] text-[#84a98c]/60 font-medium uppercase tracking-[0.25em]">
                     {item.title}
                   </span>
                 </span>

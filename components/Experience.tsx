@@ -29,10 +29,10 @@ const Experience = () => {
                 className="lg:w-32 md:w-20 w-16"
               />
               <div className="lg:ms-5">
-                <h1 className="text-start text-xl md:text-2xl font-bold text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.1)]">
+                <h1 className="text-start text-sm md:text-base font-bold text-white uppercase tracking-[0.2em]">
                   {card.title}
                 </h1>
-                <p className="text-start text-slate-200/80 mt-3 font-semibold">
+                <p className="text-start text-white/50 mt-3 text-xs md:text-sm tracking-wide leading-relaxed">
                   {card.desc}
                 </p>
               </div>

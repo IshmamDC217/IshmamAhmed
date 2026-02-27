@@ -108,17 +108,16 @@ const Card = ({
           {icon}
         </div>
         <h2
-          className="text-white text-center text-3xl opacity-0 group-hover/canvas-card:opacity-100
-         relative z-10 mt-4 font-bold group-hover/canvas-card:text-white
-         group-hover/canvas-card:-translate-y-2 transition duration-200 drop-shadow-[0_0_10px_rgba(255,255,255,0.1)]"
+          className="text-white text-center text-lg md:text-xl opacity-0 group-hover/canvas-card:opacity-100
+         relative z-10 mt-4 font-bold uppercase tracking-[0.2em] group-hover/canvas-card:text-white
+         group-hover/canvas-card:-translate-y-2 transition duration-200"
         >
           {title}
         </h2>
         <p
-          className="text-sm opacity-0 group-hover/canvas-card:opacity-100
-         relative z-10 mt-4 group-hover/canvas-card:text-white text-center
-         group-hover/canvas-card:-translate-y-2 transition duration-200"
-          style={{ color: "#E4ECFF" }}
+          className="text-xs md:text-sm opacity-0 group-hover/canvas-card:opacity-100
+         relative z-10 mt-4 text-center tracking-wide leading-relaxed
+         group-hover/canvas-card:-translate-y-2 transition duration-200 text-white/70"
         >
           {des}
         </p>
@@ -141,7 +140,7 @@ const AceternityIcon = ({ step }: { step: string }) => {
         />
         <span
           className="relative inline-flex h-full w-full cursor-pointer items-center
-        justify-center rounded-full bg-gradient-to-br from-[#0a0a0f] via-[#0f0f1a] to-[#0a0a0f] px-5 py-2 text-[#a3b18a] backdrop-blur-3xl font-bold text-2xl border border-white/20"
+        justify-center rounded-full bg-gradient-to-br from-[#0a0a0f] via-[#0f0f1a] to-[#0a0a0f] px-6 py-2.5 text-[#84a98c]/70 backdrop-blur-3xl font-medium text-sm uppercase tracking-[0.3em] border border-white/20"
         >
           {step}
         </span>
