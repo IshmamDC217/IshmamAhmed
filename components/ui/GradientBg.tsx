@@ -4,13 +4,13 @@ import { useEffect, useRef, useState } from "react";
 
 export const BackgroundGradientAnimation = ({
   gradientBackgroundStart = "rgb(0, 0, 0)", // Black start
-  gradientBackgroundEnd = "rgb(0, 50, 100)", // Dark blue end
-  firstColor = "0, 68, 255", // Bright blue
-  secondColor = "0, 128, 255", // Lighter blue
-  thirdColor = "0, 42, 85", // Darker blue
-  fourthColor = "0, 255, 255", // Cyan
-  fifthColor = "30, 30, 60", // Very dark blue
-  pointerColor = "0, 120, 255", // Blue for pointer interaction
+  gradientBackgroundEnd = "rgb(10, 26, 16)", // Dark green end
+  firstColor = "52, 121, 111", // Forest teal
+  secondColor = "132, 169, 140", // Sage green
+  thirdColor = "30, 60, 40", // Dark green
+  fourthColor = "163, 177, 138", // Olive sage
+  fifthColor = "20, 35, 25", // Very dark green
+  pointerColor = "82, 121, 111", // Forest green for pointer
   size = "80%",
   blendingValue = "overlay", // Use overlay blending for a softer effect
   children,
