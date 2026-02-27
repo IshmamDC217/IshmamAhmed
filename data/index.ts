@@ -73,7 +73,7 @@ export const projects = [
   {
     id: 2,
     title: "ForgeRealm",
-    des: "A full-stack e-commerce platform built with Astro, React, Express.js, and MySQL featuring JWT auth, role-based access, and a modern storefront.",
+    des: "My own tech business — a full-stack platform built with Astro, React, Express.js, and MySQL powering the ForgeRealm brand and storefront.",
     img: "/forgerealm.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/next.svg", "/c.svg"],
     link: "https://github.com/tobiy105/forgerealm",
