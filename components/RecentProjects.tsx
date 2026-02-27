@@ -12,7 +12,7 @@ const RecentProjects = () => {
       </h1>
 
       {/* Adjust grid for responsive layout */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-28 lg:gap-40 max-w-7xl mx-auto pb-32 border-b border-white/10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-28 lg:gap-40 max-w-7xl mx-auto pb-32 border-b border-white/10">
         {projects.map((item) => (
           <div
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center w-full"
